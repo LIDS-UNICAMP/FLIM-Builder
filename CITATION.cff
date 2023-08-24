@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: FLIM-Builder
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Azael Melo
+    family-names: Sousa
+    email: azaelmsousa@gmail.com
+    orcid: 'https://orcid.org/0000-0003-3308-2439'
+    affiliation: University of Campinas
+  - given-names: Leonardo Melo
+    family-names: João
+    email: leomelo168@gmail.com
+    orcid: 'https://orcid.org/0000-0003-4625-7840'
+    affiliation: University of Campinas
+  - given-names: Ilan Francisco
+    family-names: Silva
+    email: ilanfsilva@gmail.com
+    orcid: 'https://orcid.org/0000-0003-4019-3380'
+    affiliation: University of Campinas
+  - orcid: 'https://orcid.org/0000-0002-2914-5380'
+    email: afalcao@ic.unicamp.br
+    given-names: Alexandre Xavier
+    family-names: Falcão
+    affiliation: University of Campinas
+repository-code: 'https://github.com/LIDS-UNICAMP/FLIM-Builder'
+abstract: >-
+  Official repository of the software FLIM-Builder. 
+  FLIM-Builder provides an interface for training FLIM-based CNNs. 
+  In FLIM Builder, the user can define the network architecture, 
+  load and annotate the dataset, train the CNN using FLIM, see each 
+  kernel's activation (and manually select them if desired), and run 
+  on the validation set.
+license: MIT
+date-released: '2023-08-24'
