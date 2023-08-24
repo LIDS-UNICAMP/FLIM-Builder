@@ -1,0 +1,8 @@
+*.o
+*.cpp
+ui_projection.h
+ui_mainwindow.h
+moc_predefs.h
+bin
+Makefile
+FLIMbuilder

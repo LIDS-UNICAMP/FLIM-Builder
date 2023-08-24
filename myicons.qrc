@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/open_folder.svg</file>
+        <file>icons/shrink.png</file>
+        <file>icons/expand.png</file>
+        <file>icons/zoom_out.png</file>
+        <file>icons/zoom_in.png</file>
+        <file>icons/minus.svg</file>
+        <file>icons/plus.svg</file>
+        <file>icons/save.png</file>
+        <file>icons/save2.png</file>
+        <file>icons/draw.png</file>
+        <file>icons/window_level.png</file>
+        <file>icons/select.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/contour.png</file>
+        <file>icons/mask.png</file>
+        <file>icons/gold.png</file>
+        <file>icons/scatter.png</file>
+        <file>icons/patches.png</file>
+        <file>icons/turn.svg</file>
+    </qresource>
+</RCC>

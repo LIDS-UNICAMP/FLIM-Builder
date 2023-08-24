@@ -1,0 +1,9 @@
+Install cuda-toolkit from NVIDIA
+
+GCC 4.9+
+
+Atlas (BLAS + LAPACK)
+sudo apt-get install libatlas-base-dev
+sudo apt install liblapack-dev libopenblas-dev
+
+Qt up to 6.3.1 for FLIMBuilder and Mise
