@@ -1,32 +1,37 @@
 # FLIM-Builder
 
-This is the official repository of the software FLIM-Builder. FLIM-Builder provides an interface for training FLIM-based CNNs. In FLIM Builder, the user can define the network architecture, load and annotate the dataset, train the CNN using FLIM, see each kernel's activation (an manually select them if desired), and run on the validation set.
+This is the official repository of the software FLIM-Builder. FLIM-Builder provides an interface for training FLIM-based CNNs. In FLIM Builder, the user can define the network architecture, load and annotate the dataset, train the CNN using FLIM, see each kernel's activation (and manually select them if desired), and run on the validation set.
 
 ## Installing
 ### Requirements
-GCC 4.9+ (build-essential)
+These packages are required for a successful compilation.
+- GCC 4.9+
+- ATLAS
+- LAPACK
+- BLAS
+- Qt 6.3.1+
+  
+And they can be installed on Ubuntu by:
 
-ATLAS (libatlas-base-dev)
-
-LAPACK (liblapack-dev)
-
-BLAS  (libopenblas-dev)
-
-Qt 6.3.1+
+```console
+apt install build-essential
+apt install libatlas-base-dev liblapack-dev libopenblas-dev
+apt install qt6-base-dev
+```
 
 #### For running with GPU:
 Install cuda-toolkit from NVIDIA
 
 ### Compiling
 To generate a Makefile, simply run:
-```
-qmake FLIMBuilder.pro <OPTIONS=use_gpu>
+```console
+qmake6 FLIMBuilder.pro <OPTIONS=use_gpu>
 ```
 
 Add the optional OPTIONS=use_gpu flag for enabling GPU (you must have cuda-toolkit working)
 
 Then, run:
-```
+```console
 make .
 ```
 
@@ -58,12 +63,12 @@ We splitted FLIMBuilder in four parts to present them separately.
 1) Architecture and Experimental Setup:
 
     (a) Load an architecture setup;
-    (b) Area to change the archictecture file;
+    (b) Area to change the architecture file;
     (c) Save the architecture file;
-    (d) Set directory to save the model and the results;
+    (d) Set a directory to save the model and the results;
     (e) Define which device to run the model (-1 for CPU);
     (f) Define which layer to train/run;
-    (g) Select whether to train, run or both;
+    (g) Select whether to train, run, or both;
     (h) Run the model with all set configurations.
 </div>
 <img align="left" width="250" height="350" src="./figures/FLIMBuilder-2.png">
@@ -86,7 +91,7 @@ We splitted FLIMBuilder in four parts to present them separately.
 <div style="padding-top: 30px;padding-bottom: 30px;">
   3) Image annotation:
 
-      (a) Image pannel to view images and activatios and add scribbles;
+      (a) Image panel to view images and activations and add scribbles;
       (b) Image manipulation options
       (c) Marker options to change their size or label
       (d) Visualization and annotation options.
@@ -100,8 +105,8 @@ We splitted FLIMBuilder in four parts to present them separately.
 
       (a) Layer Selection
       (b) Invert the activations of selected kernels
-      (c) Visualize projection the kernels' feature space using TSNe
-      (d) Confirm a kernel selection (removes all other kernels).
+      (c) Visualize projection of the kernels' feature space using TSNe
+      (d) Confirm a kernel selection (remove all other kernels).
       (e) Kernel panel
-      (Double-click kernels to look at its ativation in the image panel (3.). Also, click on the check-boxes to select kernels.
+      (Double-click kernels to look at their activation in the image panel (3.). Also, click on the checkboxes to select kernels.
 </div>
